@@ -1,20 +1,28 @@
 ---
   - hosts: all
     user: root
+    vars_files:
+      - ["vars/common.yml"]
     roles:
       - baseenv
 
   - hosts: all
     user: root
+    vars_files:
+      - ["vars/softenv.yml","vars/common.yml"]
     roles:
       - softenv
 
   - hosts: all
     user: root
+    vars_files:
+      - ["vars/common.yml"]
     roles:
       - envconf
 
   - hosts: all
     user: root
+    vars_files:
+      - ["vars/common.yml"]
     roles:
       - buss

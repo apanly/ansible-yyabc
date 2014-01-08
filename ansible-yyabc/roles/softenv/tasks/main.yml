@@ -2,6 +2,19 @@
   - name: install nginx
     action: apt pkg=nginx state=present
 
+  - name: install php-fpm
+    action: apt pkg=$item state=present
+    with_items:
+      - php5-cgi
+      - php5-mysql
+      - php5-fpm
+      - php5-curl
+      - php5-gd
+      - php5-cli
+
+  - name: install mysql-server
+    action: apt pkg=mysql-server state=present
+
   - name: install git
     action: apt pkg=$item state=present
     with_items:

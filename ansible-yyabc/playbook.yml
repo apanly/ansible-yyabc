@@ -1,6 +1,0 @@
----
-  - hosts: ansible_yyabc
-    tasks:
-      - include: tasks/buss.yaml
-    handlers:
-      - include: handlers/handlers.yaml
