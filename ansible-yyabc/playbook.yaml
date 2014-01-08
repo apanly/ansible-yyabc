@@ -1,0 +1,6 @@
+---
+  - hosts: ansible_yyabc
+    tasks:
+      - include: tasks/setup.yaml
+    handlers:
+      - include: handlers/handlers.yaml
