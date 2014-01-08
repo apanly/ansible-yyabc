@@ -1,0 +1,9 @@
+---
+  - name: git clone www
+    action: git repo=git@github.com:apanly/studyabc.git dest=/home/vincent/code/www
+
+  - name: git clone book
+    action: git repo=git@github.com:apanly/bookshare.git dest=/home/vincent/code/book
+
+  - name: git clone oauth
+    action: git repo=git@github.com:apanly/oauth.git dest=/home/vincent/code/oauth

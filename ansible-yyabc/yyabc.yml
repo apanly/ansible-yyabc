@@ -1,0 +1,20 @@
+---
+  - hosts: all
+    user: root
+    roles:
+      - baseenv
+
+  - hosts: all
+    user: root
+    roles:
+      - softenv
+
+  - hosts: all
+    user: root
+    roles:
+      - envconf
+
+  - hosts: all
+    user: root
+    roles:
+      - buss

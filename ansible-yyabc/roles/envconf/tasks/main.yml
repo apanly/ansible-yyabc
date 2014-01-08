@@ -1,0 +1,15 @@
+---
+  - name: mkdir code path
+    action: file path=/home/vincent/code state=directory owner=vincent group=vincent mode=0766
+
+  - name: mkdir www path
+    action: file path=/home/vincent/code/www state=directory owner=vincent group=vincent mode=0766
+
+  - name: mkdir book path
+    action: file path=/home/vincent/code/book state=directory owner=vincent group=vincent mode=0766
+
+  - name: mkdir oauth path
+    action: file path=/home/vincent/code/oauth state=directory owner=vincent group=vincent mode=0766
+
+  - name: cp nginx conf
+    action: copy src=yyabc.conf  dest=/etc/nginx/conf.d/yyabc.conf
