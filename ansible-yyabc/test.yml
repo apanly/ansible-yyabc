@@ -1,0 +1,12 @@
+---
+  - hosts: all
+    user: root
+    tasks:
+      - name: restart nginx
+        action: command cat /etc/issue
+        notify:
+          - restart_nginx
+
+    handlers:
+      - name: restart_nginx
+        action: service name=nginx state=restarted

@@ -19,5 +19,6 @@
 
   - name: cp nginx defaultconf
     action: copy src=default.conf  dest=/etc/nginx/sites-available/default
-    notify:
-      - restart nginx
+
+  - name: restart nginx
+    action: service name=nginx state=restarted
