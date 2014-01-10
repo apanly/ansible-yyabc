@@ -11,8 +11,13 @@
   - name: mkdir oauth path
     action: file path=$codepath/oauth state=directory owner=vincent group=vincent mode=0766
 
-  - name: cp nginx conf
+  - name: cp nginx vhost yyacb's conf
     action: copy src=yyabc.conf  dest=/etc/nginx/conf.d/yyabc.conf
+
+  - name: cp nginx conf
+    action: copy src=nginx.conf  dest=/etc/nginx/nginx.conf
 
   - name: cp nginx defaultconf
     action: copy src=default.conf  dest=/etc/nginx/sites-available/default
+    notify:
+      - restart nginx
