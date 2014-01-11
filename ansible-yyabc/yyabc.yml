@@ -20,9 +20,9 @@
     roles:
       - envconf
 
-#  - hosts: all
-#    user: vincent
-#    vars_files:
-#      - ["vars/common.yml"]
-#    roles:
-#      - buss
+  - hosts: all
+    user: vincent
+    vars_files:
+      - ["vars/common.yml"]
+    roles:
+      - buss

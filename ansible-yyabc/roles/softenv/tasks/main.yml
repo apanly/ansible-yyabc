@@ -15,6 +15,9 @@
   - name: install mysql-server
     action: apt pkg=mysql-server state=present
 
+#  - name: change mysql default root's password
+#    action: command mysqladmin -u root -p123456  password "root"
+
   - name: install git
     action: apt pkg=$item state=present
     with_items:

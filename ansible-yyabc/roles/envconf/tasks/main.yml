@@ -1,15 +1,21 @@
 ---
   - name: mkdir code path
-    action: file path=$codepath state=directory owner=vincent group=vincent mode=0766
+    action: file path=$codepath state=directory owner=vincent group=vincent mode=0777
 
   - name: mkdir www path
-    action: file path=$codepath/www state=directory owner=vincent group=vincent mode=0766
+    action: file path=$codepath/www state=directory owner=vincent group=vincent mode=0777
 
   - name: mkdir book path
-    action: file path=$codepath/book state=directory owner=vincent group=vincent mode=0766
+    action: file path=$codepath/book state=directory owner=vincent group=vincent mode=0777
 
   - name: mkdir oauth path
-    action: file path=$codepath/oauth state=directory owner=vincent group=vincent mode=0766
+    action: file path=$codepath/oauth state=directory owner=vincent group=vincent mode=0777
+
+  - name: mkdir cdnstatic path
+    action: file path=$codepath/cdnstatic state=directory owner=vincent group=vincent mode=0777
+
+  - name: mkdir sqlfiles path
+    action: file path=$codepath/sqls state=directory owner=vincent group=vincent mode=0777
 
   - name: cp nginx vhost yyacb's conf
     action: copy src=yyabc.conf  dest=/etc/nginx/conf.d/yyabc.conf

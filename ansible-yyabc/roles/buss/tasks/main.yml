@@ -1,9 +1,27 @@
 ---
-  - name: git clone www
-    action: git repo=git@github.com:apanly/studyabc.git dest=/home/vincent/code/www
+#  - name: git clone www
+#    action: git repo=git@github.com:apanly/studyabc.git dest=$codepath/www
+#
+#  - name: git clone book
+#    action: git repo=git@github.com:apanly/bookshare.git dest=$codepath/book
+#
+#  - name: mkdir cache directory
+#    action: file path=$codepath/book/resource/cache state=directory owner=vincent group=vincent mode=0777
+#
+#  - name: git clone oauth
+#    action: git repo=git@github.com:apanly/oauth.git dest=$codepath/oauth
+#
+#  - name: git clone cdnstatic
+#    action: git repo=git@github.com:apanly/staticsource.git dest=$codepath/cdnstatic
 
-  - name: git clone book
-    action: git repo=git@github.com:apanly/bookshare.git dest=/home/vincent/code/book
+  - name: cp sqlfiles
+    action: copy src=sqls/  dest=$codepath/sqls/
 
-  - name: git clone oauth
-    action: git repo=git@github.com:apanly/oauth.git dest=/home/vincent/code/oauth
+  - name: init database appenglishdb
+    action: command mysql -hlocalhost -uroot -proot -e 'source $codepath/sqls/appenglish.sql'
+
+  - name: init database appbookdb
+    action: command mysql -hlocalhost -uroot -proot -e 'source $codepath/sqls/appbookdb.sql'
+
+  - name: init database appoauthdb
+    action: command mysql -hlocalhost -uroot -proot -e 'source $codepath/sqls/appoauthdb.sql'
