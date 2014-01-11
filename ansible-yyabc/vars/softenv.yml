@@ -1,2 +1,4 @@
 ---
   pid: /var/run/nginx.pid
+  mysqluser: root
+  mysqlpass: root
