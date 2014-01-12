@@ -33,4 +33,7 @@
 
 #如何搭建
 * 修改host.home中的机器ip地址
+* 准备工作
+ * 将ansible服务所在机器的ssh公钥放到网站服务机器的~/.ssh/authorized_keys中(需要分别给root帐号和一个个人帐号)
+ * 需要网站服务机器可以直接git ssh(可以使用ssh git@github.com测试看看)
 * 运行命令 ansible-playbook yyabc.yml -i host.home
