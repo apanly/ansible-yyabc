@@ -1,6 +1,6 @@
 ansible运维工具
 =================
-* 自动化部署个人网站yyabc,具体步骤请查看详细步骤[详细步骤](ansible-yyabc/readme.md)
+* 自动化部署个人网站yyabc,具体步骤请查看详细步骤[详细步骤](ansible-yyabc)
 
 
 #注意事项
