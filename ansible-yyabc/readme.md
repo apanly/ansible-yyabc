@@ -1,17 +1,17 @@
 自动化搭建个人网站环境
 =====================
 #个人网站结构
-* ├── book        图书馆系统 book.yyabc.org
-* ├── cdnstatic   常用静态文件  cndstatic.yyabc.org
-* ├── oauth       网站通行证    oauth.yyabc.org
+* ├── book        图书馆系统    [book.yyabc.org](http://book.yyabc.org)
+* ├── cdnstatic   常用静态文件  [cndstatic.yyabc.org](http://cndstatic.yyabc.org)
+* ├── oauth       网站通行证    [oauth.yyabc.org](http://oauth.yyabc.org)
 * ├── sqls        表结构
-* └── www         主站英语学习社区   www.yyabc.org yyabc.org
+* └── www         主站英语学习社区   [www.yyabc.org yyabc.org](http://www.yyabc.org)
 
 #资源地址
-* 图书馆系统 [项目地址](git@github.com:apanly/bookshare.git)
-* 常用静态文件 [项目地址](git@github.com:apanly/staticsource.git)
-* 网站通行证 [项目地址](git@github.com:apanly/oauth.git)
-* 主站英语学习社区 [项目地址](git@github.com:apanly/studyabc.git)
+* 图书馆系统 [项目地址](https://github.com/apanly/bookshare)
+* 常用静态文件 [项目地址](https://github.com/apanly/staticsource)
+* 网站通行证 [项目地址](https://github.com/apanly/oauth)
+* 主站英语学习社区 [项目地址](https://github.com/apanly/studyabc)
 
 # 网站环境要求
 * linux  deb家族系统
