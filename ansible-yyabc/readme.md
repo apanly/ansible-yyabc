@@ -1,11 +1,11 @@
 自动化搭建个人网站环境
 =====================
 #个人网站结构
-├── book        图书馆系统 book.yyabc.org
-├── cdnstatic   常用静态文件  cndstatic.yyabc.org
-├── oauth       网站通行证    oauth.yyabc.org
-├── sqls        表结构
-└── www         主站英语学习社区   www.yyabc.org yyabc.org
+* ├── book        图书馆系统 book.yyabc.org
+* ├── cdnstatic   常用静态文件  cndstatic.yyabc.org
+* ├── oauth       网站通行证    oauth.yyabc.org
+* ├── sqls        表结构
+* └── www         主站英语学习社区   www.yyabc.org yyabc.org
 
 #资源地址
 * 图书馆系统 [项目地址](git@github.com:apanly/bookshare.git)
@@ -25,10 +25,10 @@
 * 安装ansible 建议源码安装
  * wget https://pypi.python.org/packages/source/a/ansible/ansible-1.4.4.tar.gz
  * python setup.py install
-* ansible入门学习 [学习](http://tech.yyabc.org/39.html)
+* ansible入门学习 [学习去](http://tech.yyabc.org/39.html)
 
 #如何访问网站
-* www.yyabc.test  book.yyabc.test oauth.yyabc.test
+* www.yyabc.test book.yyabc.test oauth.yyabc.test
 * 请在要访问的电脑上设置以上域名的host
 
 #如何搭建
