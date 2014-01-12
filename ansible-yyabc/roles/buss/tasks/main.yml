@@ -1,18 +1,18 @@
 ---
-#  - name: git clone www
-#    action: git repo=git@github.com:apanly/studyabc.git dest=$codepath/www
-#
-#  - name: git clone book
-#    action: git repo=git@github.com:apanly/bookshare.git dest=$codepath/book
-#
-#  - name: mkdir cache directory
-#    action: file path=$codepath/book/resource/cache state=directory owner=vincent group=vincent mode=0777
-#
-#  - name: git clone oauth
-#    action: git repo=git@github.com:apanly/oauth.git dest=$codepath/oauth
-#
-#  - name: git clone cdnstatic
-#    action: git repo=git@github.com:apanly/staticsource.git dest=$codepath/cdnstatic
+  - name: git clone www
+    action: git repo=git@github.com:apanly/studyabc.git dest=$codepath/www
+
+  - name: git clone book
+    action: git repo=git@github.com:apanly/bookshare.git dest=$codepath/book
+
+  - name: mkdir cache directory
+    action: file path=$codepath/book/resource/cache state=directory owner=vincent group=vincent mode=0777
+
+  - name: git clone oauth
+    action: git repo=git@github.com:apanly/oauth.git dest=$codepath/oauth
+
+  - name: git clone cdnstatic
+    action: git repo=git@github.com:apanly/staticsource.git dest=$codepath/cdnstatic
 
   - name: cp sqlfiles
     action: copy src=sqls/  dest=$codepath/sqls/
